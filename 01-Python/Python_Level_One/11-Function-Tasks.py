@@ -15,7 +15,7 @@
 
 def check_ten(n1,n2):
     # Code Here
-    pass
+    return n1+n2==10
 
 
 
@@ -26,7 +26,7 @@ def check_ten(n1,n2):
 
 def check_ten_sum(n1,n2):
     # Code Here
-    pass
+    return True if n1+n2==10 else n1+n2
 
 
 
@@ -38,7 +38,7 @@ def check_ten_sum(n1,n2):
 
 
 def first_upper(mystring):
-    # Code Here
+    return mystring[0].upper()
 
 
 

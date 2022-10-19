@@ -14,17 +14,26 @@ s = 'flask'
 
 # Use indexing to print out the following:
 # 'f'
+print(s[0])
 
 # 's'
 
 # 'ask'
+print(s[2:])
 
 # 'las'
+print(s[1:-1])
 
 # 'k'
+print(s[-1])
 
 # Bonus: Use indexing to reverse the string
+result = []
+for i in range(len(s)-1, -1, -1):
+    # print(s[i])
+    result.append(s[i])
 
+print(''.join(result))
 
 ###############
 ## Problem 2 ##
@@ -33,6 +42,8 @@ s = 'flask'
 # Given this nested list:
 mylist = [3,7,[1,4,'hello']]
 # Reassign "hello" to be "goodbye"
+mylist[2][2] = 'goodbye'
+print(mylist)
 
 
 ###############
@@ -42,10 +53,13 @@ mylist = [3,7,[1,4,'hello']]
 # Using keys and indexing, grab the 'hello' from the following dictionaries:
 
 d1 = {'simple_key':'hello'}
+print(d1['simple_key'])
 
 d2 = {'k1':{'k2':'hello'}}
+print(d2['k1']['k2'])
 
 d3 = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+print(d3['k1'][0]['nest_key'][1][0])
 
 
 ###############
@@ -54,6 +68,8 @@ d3 = {'k1':[{'nest_key':['this is deep',['hello']]}]}
 
 # Use a set to find the unique values of the list below:
 mylist = [1,1,1,1,1,2,2,2,2,3,3,3,3]
+newlist = set(mylist)
+print(newlist)
 
 
 ###############
@@ -66,3 +82,5 @@ name = "Sammy"
 
 # Use print formatting to print the following string:
 "Hello my dog's name is Sammy and he is 4 years old"
+
+print(f"hello my dog's name is {name} and he is {age} years old")
