@@ -3,6 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     # This home page should have the form.
@@ -25,8 +26,8 @@ def report():
 
     return f'<h1>{result}</h1>'
 
-def check_username(username):
 
+def check_username(username):
     if len(username) < 3:
         return False
 
@@ -40,6 +41,7 @@ def check_username(username):
         return False
 
     return True
+
 
 if __name__ == '__main__':
     # Fill this in!
